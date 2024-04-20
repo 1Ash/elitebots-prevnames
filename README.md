@@ -1,4 +1,4 @@
-#Elitebotsprevnames
+# Elitebotsprevnames
 Elitebotsprevnames est une bibliothèque Node.js conçue pour faciliter l'interaction avec l'API prevnames d'elitebots.
 
 Installation
