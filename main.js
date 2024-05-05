@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function getPrevNames(userId) {
     try {
-        const response = await axios.get(`http://elitebots.xyz/api/prevnames/${userId}`);
+        const response = await axios.get(`http://elitebots.xyz:3000/api/prevnames/${userId}`);
         return response.data.prevNames;
     } catch (error) {
         console.error('erreur lors de la récupération des noms précédents');
@@ -12,7 +12,7 @@ async function getPrevNames(userId) {
 
 async function ping() {
     try {
-        const response = await axios.get(`http://elitebots.xyz/api/latence`, { timeout: 3000 })
+        const response = await axios.get(`http://elitebots.xyz:3000/api/latence`)
         if (response && response.data && response.data.ping) {
             return response.data.ping;
         } else {
